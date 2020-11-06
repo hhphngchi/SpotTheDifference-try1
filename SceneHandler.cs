@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Valve.VR.Extras;
 
+public bool selected = False
 public class SceneHandler : MonoBehaviour
 {
     public SteamVR_LaserPointer laserpointer;
@@ -23,6 +24,7 @@ public class SceneHandler : MonoBehaviour
         {
             Debug.Log("Button was clicked");
         }
+        selected = True
     }
 
     public void PointerInside(object sender, PointerEventArgs e)
