@@ -28,8 +28,6 @@ public class GridManager : MonoBehaviour
 				GameObject pos = Instantiate(Tile, originPosition, Quaternion.identity);
 
 				// adjust position's size
-				x = tileWidth;
-				y = tileHeight;
 				gridPositions.Add(pos);
 			}
 		}
